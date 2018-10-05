@@ -131,7 +131,7 @@ namespace Basic_Neural_Network_2nd_Try
                 {
                     for (int l = 0; l < this.cols; l++)
                     {
-                        this.data[i, l] += n.data[i, l];
+                        this.data[i, l] *= n.data[i, l];
                     }
                 }
         }
@@ -153,7 +153,7 @@ namespace Basic_Neural_Network_2nd_Try
             {
                 for (int l = 0; l < this.cols; l++)
                 {
-                    this.data[i, l] += n;
+                    this.data[i, l] -= n;
                 }
             }
         }
@@ -175,7 +175,7 @@ namespace Basic_Neural_Network_2nd_Try
             {
                 for (int l = 0; l < this.cols; l++)
                 {
-                    this.data[i, l] -= n;
+                    this.data[i, l] += n;
                 }
             }
         }
@@ -271,6 +271,20 @@ namespace Basic_Neural_Network_2nd_Try
             }
             return Result;
         }
+
+        public static Matrix_Math MultiplyHadamard(Matrix_Math m1, Matrix_Math m2)
+        {
+            Matrix_Math Result = new Matrix_Math(m1.rows, m1.cols);
+            for (int i = 0; i < m1.rows; i++)
+            {
+                for (int l = 0; l < m1.cols; l++)
+                {
+                    Result.data[i, l] = m1.data[i, l] * m2.data[i, l];
+                }
+            }
+            return Result;
+        }
+
         public static Matrix_Math Subtract(Matrix_Math m, double n)
         {
             Matrix_Math Result = new Matrix_Math(m.rows, m.cols);
