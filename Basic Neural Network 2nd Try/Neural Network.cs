@@ -19,7 +19,7 @@ namespace Basic_Neural_Network_2nd_Try
             this.NumOfoutput = output;
             this.lr = lr;
             //creates a matrix for the weights between the input and hidden in the size of hidden*input
-            this.Winput_hidden = new Matrix_Math(NumOfhidden, NumOfoutput);
+            this.Winput_hidden = new Matrix_Math(NumOfhidden, NumOfinput);
             //creates a matrix for the weights between the hidden and output in the size of output*hidden
             this.Whidden_output = new Matrix_Math(NumOfoutput, NumOfhidden);
 
@@ -36,6 +36,7 @@ namespace Basic_Neural_Network_2nd_Try
             //converts the array into a useable matrices object
             Matrix_Math inputs = new Matrix_Math(inputs_array);
             Matrix_Math targets = new Matrix_Math(targets_array);
+
 
             //Multiplie the input-hidden weight matrix with the inputs to create the input of the hidden layer
             Matrix_Math hidden_inputs = Matrix_Math.multiply(this.Winput_hidden, inputs);
