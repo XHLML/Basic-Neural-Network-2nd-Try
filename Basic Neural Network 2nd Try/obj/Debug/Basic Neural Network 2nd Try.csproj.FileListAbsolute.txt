@@ -1,0 +1,7 @@
+G:\Programing\Basic Neural Network 2nd Try\Basic Neural Network 2nd Try\bin\Debug\Basic Neural Network 2nd Try.exe.config
+G:\Programing\Basic Neural Network 2nd Try\Basic Neural Network 2nd Try\bin\Debug\Basic Neural Network 2nd Try.exe
+G:\Programing\Basic Neural Network 2nd Try\Basic Neural Network 2nd Try\bin\Debug\Basic Neural Network 2nd Try.pdb
+G:\Programing\Basic Neural Network 2nd Try\Basic Neural Network 2nd Try\obj\Debug\Basic Neural Network 2nd Try.csprojResolveAssemblyReference.cache
+G:\Programing\Basic Neural Network 2nd Try\Basic Neural Network 2nd Try\obj\Debug\Basic Neural Network 2nd Try.csproj.CoreCompileInputs.cache
+G:\Programing\Basic Neural Network 2nd Try\Basic Neural Network 2nd Try\obj\Debug\Basic Neural Network 2nd Try.exe
+G:\Programing\Basic Neural Network 2nd Try\Basic Neural Network 2nd Try\obj\Debug\Basic Neural Network 2nd Try.pdb
