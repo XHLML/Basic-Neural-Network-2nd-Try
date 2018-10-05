@@ -89,5 +89,6 @@ namespace Basic_Neural_Network_2nd_Try
             return x * (1 - x); // sigmoid(x) * (1-sigmoid(x))
         }
 
+
     }
 }
