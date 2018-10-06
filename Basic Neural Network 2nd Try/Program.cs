@@ -13,8 +13,8 @@ namespace Basic_Neural_Network_2nd_Try
             Neural_Network n = new Neural_Network(0.1, 2, 4, 1);
             Random r = new Random();
             int i = 0;
-            while (n.query(new double[,] { { 0 }, { 1 } }).data[0,0]<0.99|| n.query(new double[,] { { 1 }, { 0 } }).data[0, 0] < 0.99|| n.query(new double[,] { { 0 }, { 0 } }).data[0, 0] > 0.01|| n.query(new double[,] { { 1 }, { 1 } }).data[0, 0] > 0.01)
-          //  for (int i = 0; i < 1000000; i++)
+           while (n.query(new double[,] { { 0 }, { 1 } }).data[0,0]<0.99|| n.query(new double[,] { { 1 }, { 0 } }).data[0, 0] < 0.99|| n.query(new double[,] { { 0 }, { 0 } }).data[0, 0] > 0.01|| n.query(new double[,] { { 1 }, { 1 } }).data[0, 0] > 0.01)
+           // for (int i = 0; i < 1000000; i++)
             {
                 i++;
                 int l = r.Next(0, 4);
