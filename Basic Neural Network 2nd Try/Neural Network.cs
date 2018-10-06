@@ -36,7 +36,7 @@ namespace Basic_Neural_Network_2nd_Try
             //this.hidden_output.PrintSelf();
         }
 
-        public void train(double[,] inputs_array, double[,] targets_array)
+        public Matrix_Math train(double[,] inputs_array, double[,] targets_array)
         {
             //converts the array into a useable matrices object
             Matrix_Math inputs = new Matrix_Math(inputs_array);
@@ -77,6 +77,8 @@ namespace Basic_Neural_Network_2nd_Try
             this.bias_output.AddSelf(Matrix_Math.multiply(Matrix_Math.MultiplyHadamard(/*Matrix_Math.MultiplyHadamard(*/output_errors/*, final_outputs)*/, Matrix_Math.Map(final_outputs, dsigmoid)), this.lr));
 
             this.bias_hidden.AddSelf(Matrix_Math.multiply(Matrix_Math.MultiplyHadamard(/*Matrix_Math.MultiplyHadamard(*/hidden_errors/*, hidden_outputs)*/, Matrix_Math.Map(hidden_outputs, dsigmoid)), this.lr));
+
+            return final_outputs;
         }
 
         public Matrix_Math query(double[,] inputs_array)
